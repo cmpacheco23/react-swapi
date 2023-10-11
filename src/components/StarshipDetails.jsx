@@ -6,7 +6,7 @@ const StarshipDetails = ({starship}) => {
   return (
     <main className="card">
     <div className="card-container">
-      <Link to={`/ships/${starship.url.match(/\d+/)}`}>{starship.name} </Link>
+      <Link className="link" to={`/ships/${starship.url.match(/\d+/)}`}>{starship.name} </Link>
     </div>
 
 

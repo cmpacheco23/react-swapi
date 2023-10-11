@@ -18,12 +18,14 @@ const Starship = () => {
 
   if (!shipInfo.name) return <h2>Please wait... Loading Ship...</h2>
   return ( 
-    <>
-    <h2>Name: {shipInfo.name}</h2>
-    <h2>Model: {shipInfo.model}</h2>
-    <Link to='/'> Return</Link>
 
-    </>
+    <main className="card">
+      <div className="card-container-two">
+        <h2>Name: {shipInfo.name}</h2>
+        <h2>Model: {shipInfo.model}</h2>
+        <Link to='/' className="link"> Return</Link>
+      </div>
+    </main>
   );
 }
 export default Starship ;
